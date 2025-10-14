@@ -1,0 +1,77 @@
+
+
+Docker:
+
+
+    Watch list of current containers
+
+        docker ps
+
+
+    Create container
+
+        docker run --name some-postgres -e POSTGRES_USER=cruz000 -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
+
+
+    Stop container
+
+        docker stop some-postgres
+
+
+    Delete container
+
+        docker rm some-postgres
+
+
+    Start container
+
+        docker start some-postgres
+
+
+    Execute interactive Bash
+
+        docker exec -it some-postgres bash
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+PostgreSQL:
+
+
+    List
+        \l
+
+
+    Create database
+
+        CREATE DATABASE gorm;
+
+
+    Connect database
+
+        \c gorm
+
+
+    Watch users table
+
+        SELECT * FROM users
+
+
+    Delete all users of users table
+
+        DELETE FROM users;
+
+    
+    Delete users of a certain type
+
+        DELETE FROM users WHERE email LIKE '%doe.com%';
+
+    
+    Restart ID users table counter
+
+        TRUNCATE TABLE users RESTART IDENTITY;
+
+
+
+    

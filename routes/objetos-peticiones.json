@@ -1,0 +1,13 @@
+{
+    "user1": { 
+        "data": {"first_name": "joe", "last_name": "doe", "email": "joe@doe.com" },
+        "modifiyng data": {"first_name": "d.b.", "last_name": "cooper", "email": "d.b.@cooper.com" },
+        "task1": { "title": "some title", "description": "some description", "user_id": "1" },
+        "task2": { "title": "another title", "description": "another description", "user_id": "1" } 
+    },
+    "user2": { 
+        "data": {"first_name": "maria", "last_name": "doe", "email": "maria@doe.com" },
+        "task1": { "title": "doing", "description": "some task", "user_id": "1" },
+        "task2": { "title": "thinking", "description": "another task", "user_id": "1" }
+    }
+}

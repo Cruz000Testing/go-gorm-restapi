@@ -3,9 +3,9 @@ package main
 import (
 	"net/http"
 
-	"github.com/Cruz000Testing/go-gorm-restapi/db"
-	"github.com/Cruz000Testing/go-gorm-restapi/models"
-	"github.com/Cruz000Testing/go-gorm-restapi/routes"
+	"github.com/Cruz000Testing/go-gorm-restapi/tree/main/db"
+	"github.com/Cruz000Testing/go-gorm-restapi/tree/main/models"
+	"github.com/Cruz000Testing/go-gorm-restapi/tree/main/routes"
 	"github.com/gorilla/mux"
 )
 

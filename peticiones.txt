@@ -1,0 +1,70 @@
+contents:
+
+    user
+
+        {"first_name": "", "last_name": "","email": ""}
+
+     // {"first_name": "joe", "last_name": "doe", "email": "joe@doe.com"}
+
+    task
+
+        {"title": "", "description": "",  "user_id":}
+
+     // {"title": "first title", "description": "some description",  "user_id":3}
+
+
+GET
+
+    curl -s -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" https://ejemplo.com
+
+ // curl -s -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" http://localhost:3000/users
+
+
+
+PUT
+
+    curl -s -X POST -H "Content-Type: application/json" -d '{}' -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" https://ejemplo.com
+
+ // curl -s -X POST -H "Content-Type: application/json" -d '{}' -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" http://localhost:3000/users
+
+
+DELETE
+
+    curl -s -X DELETE -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" https://ejemplo.com
+
+ // curl -s -X DELETE -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" http://localhost:3000/users/
+
+
+
+
+
+
+
+
+curl -s -X POST -H "Content-Type: application/json" -d '{"first_name": "joe", "last_name": "doe", "email": "joe@doe.com"}' -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" http://localhost:3000/users
+
+curl -s -X POST -H "Content-Type: application/json" -d '{"first_name": "maria", "last_name": "doe", "email": "maria@doe.com"}' -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" http://localhost:3000/users
+
+
+
+curl -s -X POST -H "Content-Type: application/json" -d '{ "title": "some title", "description": "some description", "user_id": 1 }' -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" http://localhost:3000/tasks
+
+curl -s -X POST -H "Content-Type: application/json" -d '{ "title": "another title", "description": "another description", "user_id": 2 }' -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" http://localhost:3000/tasks
+
+
+
+
+
+
+
+
+
+
+
+
+/// PATCH 
+
+
+curl -s -X PATCH "Content-Type: application/json" -d '{"first_name": "d.b.", "last_name": "cooper", "email": "d.b.@cooper.com" }' -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" http://localhost:3000/users/1
+
+curl -s -X PATCH "Content-Type: application/json" -d '{"first_name": "joe", "last_name": "doe", "email": "joe@doe.com" }' -w "\n\nStatus code: %{http_code}\nSize (bytes): %{size_download}\nRequested URL: %{url_effective}\nTime of connection: %{time_connect}s\nTotal time: %{time_total}s\n" http://localhost:3000/users/1

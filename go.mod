@@ -1,4 +1,4 @@
-module github.com/cruz000testings/go-gorm-resapi
+module github.com/Cruz000Testing/go-gorm-restapi
 
 go 1.25.2
 

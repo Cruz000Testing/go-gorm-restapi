@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/Cruz000Testing/go-gorm-restapi/tree/main/db"
-	"github.com/Cruz000Testing/go-gorm-restapi/tree/main/models"
+	"github.com/Cruz000Testing/go-gorm-restapi/db"
+	"github.com/Cruz000Testing/go-gorm-restapi/models"
 	"github.com/gorilla/mux"
 )
 
